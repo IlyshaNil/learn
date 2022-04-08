@@ -13,7 +13,7 @@ development:
     - localhost
 
 heroku:
-  DEBUG: true
+  DEBUG: false
   ALLOWED_HOSTS: ["127.0.0.1",
                   "localhost",
                   "ilysha.herokuapp.com"]
