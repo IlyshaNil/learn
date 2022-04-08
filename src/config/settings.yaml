@@ -1,5 +1,5 @@
 default: 
-  SECRET_KEY: ''
+  SECRET_KEY: ""
   DEBUG: true
   ALLOWED_HOSTS: ["127.0.0.1",
                   "localhost",
@@ -13,7 +13,7 @@ development:
     - localhost
 
 heroku:
-  DEBUG: false
+  DEBUG: true
   ALLOWED_HOSTS: ["127.0.0.1",
                   "localhost",
                   "ilysha.herokuapp.com"]
