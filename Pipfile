@@ -9,6 +9,7 @@ djangorestframework = "*"
 dynaconf = {extras = ["yaml"], version = "*"}
 dj-database-url = "*"
 psycopg2 = "*"
+whitenoise = "*"
 
 [dev-packages]
 black = "*"
