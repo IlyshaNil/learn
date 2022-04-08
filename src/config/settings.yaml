@@ -1,0 +1,27 @@
+default: 
+  SECRET_KEY: ''
+  DEBUG: true
+  ALLOWED_HOSTS: ["127.0.0.1",
+                  "localhost",
+                  "ilysha.herokuapp.com"]
+  DATABASE_URL: ""
+
+development:
+  DEBUG: True
+  ALLOWED_HOSTS:
+    - 127.0.0.1
+    - localhost
+
+heroku:
+  DEBUG: false
+  ALLOWED_HOSTS: ["127.0.0.1",
+                  "localhost",
+                  "ilysha.herokuapp.com"]
+
+
+github_actions:
+  DEBUG: True
+  ALLOWED_HOSTS: '*'
+  SECRET_KEY: "xxx"
+  DATABASE_URL: "postgresql://postgres:1234@localhost:5432/learn"
+

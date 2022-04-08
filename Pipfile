@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 django = "*"
+djangorestframework = "*"
+dynaconf = {extras = ["yaml"], version = "*"}
+dj-database-url = "*"
 
 [dev-packages]
 black = "*"
