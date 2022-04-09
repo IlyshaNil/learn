@@ -131,7 +131,4 @@ dmypy.json
 src/config/.secrets.yaml
 
 #static images
-.png
-.jpg
-*.png
-*.jpg
+
