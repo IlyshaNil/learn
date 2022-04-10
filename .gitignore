@@ -137,4 +137,4 @@ src/config/.secrets.yaml
 
 src/media/django-logo-negative.png
 src/media/logo.png
-src/media/xpostgresql.jpg.pagespeed.ic.82ZZ05AnGg.jpg
+src/media/*
