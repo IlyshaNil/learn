@@ -10,6 +10,8 @@ dynaconf = {extras = ["yaml"], version = "*"}
 dj-database-url = "*"
 psycopg2 = "*"
 whitenoise = "*"
+jinja2 = "*"
+pillow = "*"
 
 [dev-packages]
 black = "*"

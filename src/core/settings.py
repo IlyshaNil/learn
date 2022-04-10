@@ -19,6 +19,7 @@ from dynaconf import settings as _settings
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -40,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'cv'
+    'cv',
+    'api'
 ]
 
 MIDDLEWARE = [
@@ -57,6 +59,22 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.jinja2.Jinja2",
+        "DIRS": [
+            BASE_DIR / "cv/jinja2",
+        ],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "environment": "cv.jinja2_util.environment",
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+            ],
+        },
+    },
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
@@ -120,12 +138,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
-
-
 STATIC_ROOT_DIR = BASE_DIR / "static"
-STATIC_ROOT = STATIC_ROOT_DIR.as_posix()
-STATIC_URL = "/static/"
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static/')  # add STATIC_ROOT to DIRS
+]
+#STATIC_ROOT = BASE_DIR / "static"#STATIC_ROOT_DIR.as_posix()
 STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
