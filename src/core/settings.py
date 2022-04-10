@@ -133,6 +133,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+MEDIA_ROOT_DIR = BASE_DIR 
+MEDIA_ROOT = MEDIA_ROOT_DIR.as_posix()
+MEDIA_URL = "/media/"
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

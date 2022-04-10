@@ -135,3 +135,6 @@ src/config/.secrets.yaml
 
 #migrations
 
+src/media/django-logo-negative.png
+src/media/logo.png
+src/media/xpostgresql.jpg.pagespeed.ic.82ZZ05AnGg.jpg
