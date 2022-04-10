@@ -139,10 +139,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT_DIR = BASE_DIR / "static"
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/')  # add STATIC_ROOT to DIRS
-]
-#STATIC_ROOT = BASE_DIR / "static"#STATIC_ROOT_DIR.as_posix()
+if _settings.ENV_FOR_DYNACONF != 'heroku':
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static/')  # add STATIC_ROOT to DIRS
+    ]
+elif _settings.ENV_FOR_DYNACONF == "heroku":    
+    STATIC_ROOT = BASE_DIR / STATIC_ROOT_DIR.as_posix()
 STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
