@@ -1,5 +1,5 @@
 # learn
-repo for learning new technologies and features
+source for my personal website deployed on heroku ilysha.herokuapp.com
 
 # buld with
 1. heroku
