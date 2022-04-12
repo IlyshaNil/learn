@@ -43,8 +43,8 @@
 			<div class="navbar-collapse collapse">
 				
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="about.html">Expirience</a></li>
+					<li class="active"><a href="/">Home</a></li>
+					<li><a href="/experience/">Experience</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -53,7 +53,7 @@
 							<li><a href="single.html">Blog Post</a></li>
 						</ul>
 					</li>
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="blog.html">Contact</a></li>
 				</ul>
 			
 			</div><!--/.nav-collapse -->			
@@ -78,43 +78,163 @@
 				<div class="col-sm-6 col-md-3">
 					<h3 class="text-center">{{ project.name }}</h3>
 					<p>{{ project.description }}</p>
-					<p class="text-center"><a href="{{ project.link }}" class="btn btn-action">explore</a></p>
+					<p class="text-center">
+						<a href="{{ project.link }}" class="btn btn-action">explore</a>
+					</p>					
 				</div>
 				{% endfor %}
 			</div>
 		</div> <!-- / section -->
 	
-		<div class="row section recentworks topspace">
-			
-			<h2 class="section-title"><span>Technologies</span></h2>
-			
+		<div class="row section recentworks topspace">			
+			<h2 class="section-title"><span> key Skills</span></h2>			
 			<div class="thumbnails recentworks row">
-				{% for tech in stack %}
+
+				
 				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
-					<a class="thumbnail" href="sidebar-right.html">
+					<a class="thumbnail" href="#">
 						<span class="img">
-							<img src="{{ tech.image.url }}" alt="logl">
+							<img src="{{ static('S3-ban/python.png') }}" alt="log0">
 						</span>
-						<span class="title">{{ tech.name }}</span>
+						<span class="title">python</span>
 					</a>
-					<span class="details"><a href="{{ tech.link }}">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
 					<h4></h4>
 					<p></p>
 				</div>
-				{% endfor %}				
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/django.png') }}" alt="log0">
+						</span>
+						<span class="title">django</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/git.png') }}" alt="log0">
+						</span>
+						<span class="title">git | github</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/postgres.png') }}" alt="log0">
+						</span>
+						<span class="title">postgresql</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/drf.png') }}" alt="log0">
+						</span>
+						<span class="title">DRF</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/dynaconf.png') }}" alt="log0">
+						</span>
+						<span class="title">dynaconf</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+								
 				
 			</div>
 
 		</div> <!-- /section -->
 
-		<div class="row section clients topspace">
-			<h2 class="section-title"><span>Clients</span></h2>
-			<div class="col-lg-12">
-				<p>
-					<img src="assets/images/sample_clients.png" alt="">
-				</p>
+		<div class="row section recentworks topspace">			
+			<h2 class="section-title"><span>additional Skills</span></h2>			
+			<div class="thumbnails recentworks row">
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/heroku.png') }}" alt="log0">
+						</span>
+						<span class="title">heroku</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/jenkins.png') }}" alt="log0">
+						</span>
+						<span class="title">jenkins</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/nginx.png') }}" alt="log0">
+						</span>
+						<span class="title">nginx</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/jinja.png') }}" alt="log0">
+						</span>
+						<span class="title">jinja2</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+					<a class="thumbnail" href="#">
+						<span class="img">
+							<img src="{{ static('S3-ban/pytest.png') }}" alt="log0">
+						</span>
+						<span class="title">pytest</span>
+					</a>
+					<span class="details"><a href="python.org">Link</a> | <a href="">Docs</a> | <a href="">In project</a></span>
+					<h4></h4>
+					<p></p>
+				</div>
+
+
 			</div>
-		</div> <!-- /section -->
+
+		</div>
 
 	</div>	<!-- /container -->
 
