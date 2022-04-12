@@ -407,7 +407,7 @@ img {
   width: 100%;
   overflow: hidden;
   height: 80px;
-  margin: 0 0 20px;
+  margin: 0 0 5px;
   position: relative;
 }
 .thumbnail .title {
